@@ -1,6 +1,7 @@
 package com.rennworks.matpackhelper;
 
 import com.mojang.logging.LogUtils;
+import com.rennworks.matpackhelper.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,8 @@ public class MatpakHelper {
 
     public MatpakHelper() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
