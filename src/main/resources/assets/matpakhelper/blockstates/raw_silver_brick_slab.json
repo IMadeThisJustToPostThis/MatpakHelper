@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "matpakhelper:block/raw_silver_brick_slab"
+    },
+    "type=double": {
+      "model": "matpakhelper:block/raw_silver_bricks"
+    },
+    "type=top": {
+      "model": "matpakhelper:block/raw_silver_brick_slab_top"
+    }
+  }
+}

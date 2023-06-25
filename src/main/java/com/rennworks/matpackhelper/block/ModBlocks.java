@@ -36,6 +36,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops().strength(5.0f, 6.0f)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWSILVER_BRICKS = registerBlock("raw_silver_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops().strength(5.0f, 6.0f)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // stair registries
     public static final RegistryObject<Block> RAWTUNGSTEN_BRICKSTAIRS = registerBlock("raw_tungsten_brick_stairs",
@@ -47,6 +51,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAWVINTAGEMETAL_BRICKSTAIRS = registerBlock("raw_vintage_metal_brick_stairs",
             () -> new StairBlock(RAWTUNGSTEN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWSILVER_BRICKSTAIRS = registerBlock("raw_silver_brick_stairs",
+            () -> new StairBlock(RAWTUNGSTEN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // slab registries
     public static final RegistryObject<Block> RAWTUNGSTEN_BRICKSLAB = registerBlock("raw_tungsten_brick_slab",
@@ -56,6 +63,9 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> RAWVINTAGEMETAL_BRICKSLAB = registerBlock("raw_vintage_metal_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWSILVER_BRICKSLAB = registerBlock("raw_silver_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
 
