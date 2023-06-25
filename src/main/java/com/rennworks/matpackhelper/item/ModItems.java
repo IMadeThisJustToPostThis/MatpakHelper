@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MatpakHelper.MODID);
+
     // materials
     public static final RegistryObject<Item> TERRIBLECRYSTAL = ITEMS.register("terrible_crystal",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
@@ -24,6 +25,7 @@ public class ModItems {
     public static final RegistryObject<Item> TERRIBLEPLATING = ITEMS.register("terrible_plating",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
+    // register method
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

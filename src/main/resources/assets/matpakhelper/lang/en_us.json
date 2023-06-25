@@ -4,5 +4,7 @@
 
   "item.matpakhelper.iron_plating": "Iron Plating",
   "item.matpakhelper.diamond_plating": "Diamond Plating",
-  "item.matpakhelper.terrible_plating": "Aquamarine Plating"
+  "item.matpakhelper.terrible_plating": "Aquamarine Plating",
+
+  "block.matpakhelper.raw_tungsten_bricks": "Raw Tungsten Bricks"
 }
