@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "matpakhelper:raw_dark_metal_block",
+    "matpakhelper:raw_dark_metal_bricks",
+    "matpakhelper:raw_dark_metal_brick_stairs",
+    "matpakhelper:raw_dark_metal_brick_slab"
+  ]
+}

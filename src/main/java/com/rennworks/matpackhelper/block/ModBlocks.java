@@ -22,19 +22,31 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, MatpakHelper.MODID);
 
     // block registries
+    public static final RegistryObject<Block> RAWTUNGSTEN_BLOCK = registerBlock("raw_tungsten_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops().strength(10.0f, 20.0f)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWDARKMETAL_BLOCK = registerBlock("raw_dark_metal_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops().strength(50.0f, 1200.0f)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWVINTAGEMETAL_BLOCK = registerBlock("raw_vintage_metal_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops().strength(3.0f, 6.0f)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // brick registries
     public static final RegistryObject<Block> RAWTUNGSTEN_BRICKS = registerBlock("raw_tungsten_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .requiresCorrectToolForDrops().strength(5.0f, 6.0f)),
+                    .requiresCorrectToolForDrops().strength(10.0f, 20.0f)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> RAWDARKMETAL_BRICKS = registerBlock("raw_dark_metal_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .requiresCorrectToolForDrops().strength(5.0f, 6.0f)),
+                    .requiresCorrectToolForDrops().strength(50.0f, 1200.0f)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> RAWVINTAGEMETAL_BRICKS = registerBlock("raw_vintage_metal_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .requiresCorrectToolForDrops().strength(5.0f, 6.0f)),
+                    .requiresCorrectToolForDrops().strength(3.0f, 6.0f)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> RAWSILVER_BRICKS = registerBlock("raw_silver_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
