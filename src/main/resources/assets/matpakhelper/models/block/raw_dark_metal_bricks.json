@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "matpakhelper:block/raw_dark_metal_bricks"
+  }
+}

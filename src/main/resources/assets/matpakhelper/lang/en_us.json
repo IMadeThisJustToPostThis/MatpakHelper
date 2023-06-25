@@ -6,5 +6,15 @@
   "item.matpakhelper.diamond_plating": "Diamond Plating",
   "item.matpakhelper.terrible_plating": "Aquamarine Plating",
 
-  "block.matpakhelper.raw_tungsten_bricks": "Raw Tungsten Bricks"
+  "block.matpakhelper.raw_tungsten_bricks": "Raw Tungsten Bricks",
+  "block.matpakhelper.raw_dark_metal_bricks": "Raw Titanium Bricks",
+  "block.matpakhelper.raw_vintage_metal_bricks": "Raw Tin Bricks",
+
+  "block.matpakhelper.raw_tungsten_brick_stairs": "Raw Tungsten Brick Stairs",
+  "block.matpakhelper.raw_dark_metal_brick_stairs": "Raw Titanium Brick Stairs",
+  "block.matpakhelper.raw_vintage_metal_brick_stairs": "Raw Tin Brick Stairs",
+
+  "block.matpakhelper.raw_tungsten_brick_slab": "Raw Tungsten Brick Slab",
+  "block.matpakhelper.raw_dark_metal_brick_slab": "Raw Titanium Brick Slab",
+  "block.matpakhelper.raw_vintage_metal_brick_slab": "Raw Tin Brick Slab"
 }

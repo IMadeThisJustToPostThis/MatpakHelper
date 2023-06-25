@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "matpakhelper:block/raw_tungsten_brick_slab"
+    },
+    "type=double": {
+      "model": "matpakhelper:block/raw_tungsten_bricks"
+    },
+    "type=top": {
+      "model": "matpakhelper:block/raw_tungsten_brick_slab_top"
+    }
+  }
+}

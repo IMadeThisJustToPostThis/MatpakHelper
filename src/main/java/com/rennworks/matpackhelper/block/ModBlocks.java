@@ -6,6 +6,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -21,18 +22,48 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, MatpakHelper.MODID);
 
     // block registries
+
+    // brick registries
     public static final RegistryObject<Block> RAWTUNGSTEN_BRICKS = registerBlock("raw_tungsten_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops().strength(5.0f, 6.0f)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWDARKMETAL_BRICKS = registerBlock("raw_dark_metal_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops().strength(5.0f, 6.0f)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWVINTAGEMETAL_BRICKS = registerBlock("raw_vintage_metal_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops().strength(5.0f, 6.0f)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // stair registries
-
     public static final RegistryObject<Block> RAWTUNGSTEN_BRICKSTAIRS = registerBlock("raw_tungsten_brick_stairs",
+            () -> new StairBlock(RAWTUNGSTEN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWDARKMETAL_BRICKSTAIRS = registerBlock("raw_dark_metal_brick_stairs",
+            () -> new StairBlock(RAWTUNGSTEN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWVINTAGEMETAL_BRICKSTAIRS = registerBlock("raw_vintage_metal_brick_stairs",
             () -> new StairBlock(RAWTUNGSTEN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // slab registries
+    public static final RegistryObject<Block> RAWTUNGSTEN_BRICKSLAB = registerBlock("raw_tungsten_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWDARKMETAL_BRICKSLAB = registerBlock("raw_dark_metal_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> RAWVINTAGEMETAL_BRICKSLAB = registerBlock("raw_vintage_metal_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    // fence registries
+
+    // fencegate registries
+
+    // wall registries
 
     // register methods
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

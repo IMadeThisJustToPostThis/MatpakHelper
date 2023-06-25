@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "matpakhelper:block/raw_tungsten_bricks",
+    "side": "matpakhelper:block/raw_tungsten_bricks",
+    "top": "matpakhelper:block/raw_tungsten_bricks"
+  }
+}
