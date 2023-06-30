@@ -14,6 +14,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.function.Supplier;
 
@@ -65,6 +66,9 @@ public class ModBlocks {
             CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> RAWSILVER_BRICKSTAIRS = registerBlock("raw_silver_brick_stairs",
             () -> new StairBlock(RAWTUNGSTEN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(RAWTUNGSTEN_BRICKS.get())),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
+            () -> new StairBlock(Blocks.SMOOTH_STONE.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     // slab registries
