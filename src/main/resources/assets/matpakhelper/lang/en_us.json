@@ -19,6 +19,8 @@
   "block.matpakhelper.raw_tungsten_block": "Block of Raw Tungsten",
   "block.matpakhelper.raw_dark_metal_block": "Block of Raw Titanium",
   "block.matpakhelper.raw_vintage_metal_block": "Block of Raw Tin",
+  "block.matpakhelper.smooth_deepslate": "Smooth Deepslate",
+  "block.matpakhelper.smooth_end_stone": "Smooth End Stone",
 
   "block.matpakhelper.raw_tungsten_bricks": "Raw Tungsten Bricks",
   "block.matpakhelper.raw_dark_metal_bricks": "Raw Titanium Bricks",
@@ -30,9 +32,16 @@
   "block.matpakhelper.raw_vintage_metal_brick_stairs": "Raw Tin Brick Stairs",
   "block.matpakhelper.raw_silver_brick_stairs": "Raw Silver Brick Stairs",
   "block.matpakhelper.smooth_stone_stairs": "Smooth Stone Stairs",
+  "block.matpakhelper.smooth_deepslate_stairs": "Smooth Deepslate Stairs",
+  "block.matpakhelper.smooth_end_stone_stairs": "Smooth End Stone Stairs",
 
   "block.matpakhelper.raw_tungsten_brick_slab": "Raw Tungsten Brick Slab",
   "block.matpakhelper.raw_dark_metal_brick_slab": "Raw Titanium Brick Slab",
   "block.matpakhelper.raw_vintage_metal_brick_slab": "Raw Tin Brick Slab",
-  "block.matpakhelper.raw_silver_brick_slab": "Raw Silver Brick Slab"
+  "block.matpakhelper.raw_silver_brick_slab": "Raw Silver Brick Slab",
+  "block.matpakhelper.smooth_deepslate_slab": "Smooth Deepslate Slab",
+  "block.matpakhelper.smooth_end_stone_slab": "Smooth End Stone Slab",
+
+  "block.matpakhelper.deepslate_blast_furnace": "Deepslate Blast Furnace",
+  "block.matpakhelper.end_stone_blast_furnace": "End Stone Blast Furnace"
 }

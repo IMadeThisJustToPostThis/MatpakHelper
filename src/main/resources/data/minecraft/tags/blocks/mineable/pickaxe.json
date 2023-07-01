@@ -16,6 +16,14 @@
     "matpakhelper:raw_silver_bricks",
     "matpakhelper:raw_silver_brick_stairs",
     "matpakhelper:raw_silver_brick_slab",
-    "matpakhelper:smooth_stone_stairs"
+    "matpakhelper:smooth_stone_stairs",
+    "matpakhelper:smooth_deepslate",
+    "matpakhelper:smooth_deepslate_stairs",
+    "matpakhelper:smooth_deepslate_slab",
+    "matpakhelper:deepslate_blast_furnace",
+    "matpakhelper:smooth_end_stone",
+    "matpakhelper:smooth_end_stone_stairs",
+    "matpakhelper:smooth_end_stone_slab",
+    "matpakhelper:end_stone_blast_furnace"
   ]
 }

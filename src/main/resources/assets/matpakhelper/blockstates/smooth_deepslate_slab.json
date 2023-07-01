@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "matpakhelper:block/smooth_deepslate_slab"
+    },
+    "type=double": {
+      "model": "matpakhelper:block/smooth_deepslate"
+    },
+    "type=top": {
+      "model": "matpakhelper:block/smooth_deepslate_slab_top"
+    }
+  }
+}

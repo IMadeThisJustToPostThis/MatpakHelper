@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "matpakhelper:block/smooth_end_stone_slab"
+    },
+    "type=double": {
+      "model": "matpakhelper:block/smooth_end_stone"
+    },
+    "type=top": {
+      "model": "matpakhelper:block/smooth_end_stone_slab_top"
+    }
+  }
+}

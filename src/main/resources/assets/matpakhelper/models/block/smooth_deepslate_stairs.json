@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "matpakhelper:block/smooth_deepslate",
+    "side": "matpakhelper:block/smooth_deepslate",
+    "top": "matpakhelper:block/smooth_deepslate"
+  }
+}
