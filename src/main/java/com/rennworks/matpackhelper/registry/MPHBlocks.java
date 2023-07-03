@@ -1,6 +1,7 @@
 package com.rennworks.matpackhelper.registry;
 
 import com.rennworks.matpackhelper.MatpakHelper;
+import com.rennworks.matpackhelper.block.MPHBlastFurnaceBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -107,7 +108,7 @@ public class MPHBlocks {
 
     // blast furnace registries
     public static final RegistryObject<Block> DEEPSLATE_BLAST_FURNACE = registerBlock("deepslate_blast_furnace",
-            () -> new BlastFurnaceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+            () -> new MPHBlastFurnaceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
                     .strength(3.0F,6.0F).sound(SoundType.DEEPSLATE).lightLevel(litBlockEmission(13))),
             CreativeModeTab.TAB_DECORATIONS);
     public static final RegistryObject<Block> END_STONE_BLAST_FURNACE = registerBlock("end_stone_blast_furnace",
@@ -132,9 +133,9 @@ public class MPHBlocks {
     }
 
     //emission method
-    private static ToIntFunction<BlockState> litBlockEmission(int p_50760_) {
-        return (p_50763_) -> {
-            return (Boolean)p_50763_.getValue(BlockStateProperties.LIT) ? p_50760_ : 0;
+    private static ToIntFunction<BlockState> litBlockEmission(int lightLevel) {
+        return (isLit) -> {
+            return (Boolean)isLit.getValue(BlockStateProperties.LIT) ? lightLevel : 0;
         };
     }
 }
