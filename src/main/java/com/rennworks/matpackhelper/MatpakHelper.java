@@ -1,8 +1,9 @@
 package com.rennworks.matpackhelper;
 
 import com.mojang.logging.LogUtils;
-import com.rennworks.matpackhelper.block.ModBlocks;
-import com.rennworks.matpackhelper.item.ModItems;
+import com.rennworks.matpackhelper.registry.MPHBlockEntityTypes;
+import com.rennworks.matpackhelper.registry.MPHBlocks;
+import com.rennworks.matpackhelper.registry.MPHItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,12 +21,13 @@ public class MatpakHelper {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public MatpakHelper() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus mphEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        MPHItems.register(mphEventBus);
+        MPHBlocks.register(mphEventBus);
+        MPHBlockEntityTypes.register(mphEventBus);
 
-        modEventBus.addListener(this::commonSetup);
+        mphEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
