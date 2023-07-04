@@ -5,9 +5,22 @@ plugins {
     id 'com.diffplug.gradle.spotless' version '4.5.1'
 }
 
-version = '0.0.1-1.19.2'
-group = 'net.rennworks.matpakhelper' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'matpakhelper'
+def parseConfig(File config) {
+    config.withReader {
+        def prop = new Properties()
+        prop.load(it)
+        return (new ConfigSlurper().parse(prop))
+    }
+}
+
+ext.configFile = file('build_mod.properties')
+ext.depsFile = file('build_dependencies.properties')
+ext.config = parseConfig(configFile)
+ext.deps = parseConfig(depsFile)
+
+version = "${config.mod_version}-${deps.mc}"
+group = "net.rennworks.${config.mod_id}" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = config.mod_name
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -135,15 +148,15 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.19.2-43.2.0'
+    minecraft "net.minecraftforge:forge:${deps.mc}-${deps.forge}"
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
 
-    compileOnly fg.deobf("vazkii.autoreglib:AutoRegLib:1.8-54.115")
-    runtimeOnly fg.deobf("vazkii.autoreglib:AutoRegLib:1.8-54.115")
+    compileOnly fg.deobf("vazkii.autoreglib:AutoRegLib:${deps.arl}")
+    runtimeOnly fg.deobf("vazkii.autoreglib:AutoRegLib:${deps.arl}")
 
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
@@ -157,12 +170,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "matpakhelper",
-                "Specification-Vendor"    : "matpakhelpersareus",
+                "Specification-Title"     : "${config.mod_id}",
+                "Specification-Vendor"    : "${config.mod_vendor}",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
-                "Implementation-Title"    : project.name,
+                "Implementation-Title"    : "${config.mod_id}",
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "matpakhelpersareus",
+                "Implementation-Vendor"   : "${config.mod_vendor}",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
