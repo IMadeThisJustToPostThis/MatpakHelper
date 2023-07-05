@@ -1,5 +1,6 @@
 package com.rennworks.matpackhelper.block.entity;
 
+import com.rennworks.matpackhelper.registry.MPHBlastFurnaces;
 import com.rennworks.matpackhelper.registry.MPHBlockEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -14,7 +15,7 @@ import net.minecraft.world.level.block.state.BlockState;
 public class MPHBlastFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
 
     public MPHBlastFurnaceBlockEntity(BlockPos pos, BlockState state) {
-        super(MPHBlockEntityTypes.DEEPSLATE_BLAST_FURNACE.get(), pos, state, RecipeType.BLASTING);
+        super(MPHBlastFurnaces.blockEntityType, pos, state, RecipeType.BLASTING);
     }
 
     @Override

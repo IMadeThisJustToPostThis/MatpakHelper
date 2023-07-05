@@ -15,10 +15,10 @@ public class MPHBlockEntityTypes {
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MatpakHelper.MODID);
 
     //block entity registries
-    public static final RegistryObject<BlockEntityType<MPHBlastFurnaceBlockEntity>> DEEPSLATE_BLAST_FURNACE =
+    /*public static final RegistryObject<BlockEntityType<MPHBlastFurnaceBlockEntity>> DEEPSLATE_BLAST_FURNACE =
             TILES.register("deepslate_blast_furnace",
             () -> BlockEntityType.Builder.of(MPHBlastFurnaceBlockEntity::new,
-                    MPHBlocks.DEEPSLATE_BLAST_FURNACE.get()).build(null));
+                    MPHBlocks.DEEPSLATE_BLAST_FURNACE.get()).build(null));*/
 
     public static void register(IEventBus eventBus) {
         TILES.register(eventBus);

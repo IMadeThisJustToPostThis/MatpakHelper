@@ -157,6 +157,8 @@ dependencies {
 
     compileOnly fg.deobf("vazkii.autoreglib:AutoRegLib:${deps.arl}")
     runtimeOnly fg.deobf("vazkii.autoreglib:AutoRegLib:${deps.arl}")
+    compileOnly fg.deobf("vazkii.quark:Quark:${deps.quark}")
+    runtimeOnly fg.deobf("vazkii.quark:Quark:${deps.quark}")
 
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")

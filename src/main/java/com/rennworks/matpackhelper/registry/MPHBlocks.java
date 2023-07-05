@@ -107,14 +107,14 @@ public class MPHBlocks {
     // wall registries
 
     // blast furnace registries
-    public static final RegistryObject<Block> DEEPSLATE_BLAST_FURNACE = registerBlock("deepslate_blast_furnace",
+    /*public static final RegistryObject<Block> DEEPSLATE_BLAST_FURNACE = registerBlock("deepslate_blast_furnace",
             () -> new MPHBlastFurnaceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
                     .strength(3.0F,6.0F).sound(SoundType.DEEPSLATE).lightLevel(litBlockEmission(13))),
             CreativeModeTab.TAB_DECORATIONS);
     public static final RegistryObject<Block> END_STONE_BLAST_FURNACE = registerBlock("end_stone_blast_furnace",
             () -> new BlastFurnaceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
                     .strength(3.0F,9.0F).lightLevel(litBlockEmission(13))),
-            CreativeModeTab.TAB_DECORATIONS);
+            CreativeModeTab.TAB_DECORATIONS);*/
 
     // register methods
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
