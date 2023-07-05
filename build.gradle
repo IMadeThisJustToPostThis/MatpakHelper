@@ -2,6 +2,7 @@ plugins {
     id 'eclipse'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
     id 'com.diffplug.gradle.spotless' version '4.5.1'
 }
 
@@ -150,15 +151,16 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft "net.minecraftforge:forge:${deps.mc}-${deps.forge}"
 
+    // Apply Mixin AP
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
 
-    compileOnly fg.deobf("vazkii.autoreglib:AutoRegLib:${deps.arl}")
-    runtimeOnly fg.deobf("vazkii.autoreglib:AutoRegLib:${deps.arl}")
-    compileOnly fg.deobf("vazkii.quark:Quark:${deps.quark}")
-    runtimeOnly fg.deobf("vazkii.quark:Quark:${deps.quark}")
+    implementation fg.deobf("vazkii.autoreglib:AutoRegLib:${deps.arl}")
+    implementation fg.deobf("vazkii.quark:Quark:${deps.quark}")
 
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
