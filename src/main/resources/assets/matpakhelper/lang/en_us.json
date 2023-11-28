@@ -20,7 +20,7 @@
   "block.matpakhelper.raw_dark_metal_block": "Block of Raw Titanium",
   "block.matpakhelper.raw_vintage_metal_block": "Block of Raw Tin",
   "block.matpakhelper.smooth_deepslate": "Smooth Deepslate",
-  "block.matpakhelper.smooth_end_stone": "Smooth End Stone",
+  "block.matpakhelper.smooth_end_stone": "Smooth Endstone",
 
   "block.matpakhelper.raw_tungsten_bricks": "Raw Tungsten Bricks",
   "block.matpakhelper.raw_dark_metal_bricks": "Raw Titanium Bricks",
@@ -33,15 +33,43 @@
   "block.matpakhelper.raw_silver_brick_stairs": "Raw Silver Brick Stairs",
   "block.matpakhelper.smooth_stone_stairs": "Smooth Stone Stairs",
   "block.matpakhelper.smooth_deepslate_stairs": "Smooth Deepslate Stairs",
-  "block.matpakhelper.smooth_end_stone_stairs": "Smooth End Stone Stairs",
+  "block.matpakhelper.smooth_end_stone_stairs": "Smooth Endstone Stairs",
 
   "block.matpakhelper.raw_tungsten_brick_slab": "Raw Tungsten Brick Slab",
   "block.matpakhelper.raw_dark_metal_brick_slab": "Raw Titanium Brick Slab",
   "block.matpakhelper.raw_vintage_metal_brick_slab": "Raw Tin Brick Slab",
   "block.matpakhelper.raw_silver_brick_slab": "Raw Silver Brick Slab",
   "block.matpakhelper.smooth_deepslate_slab": "Smooth Deepslate Slab",
-  "block.matpakhelper.smooth_end_stone_slab": "Smooth End Stone Slab",
+  "block.matpakhelper.smooth_end_stone_slab": "Smooth Endstone Slab",
 
   "block.matpakhelper.deepslate_blast_furnace": "Deepslate Blast Furnace",
-  "block.matpakhelper.end_stone_blast_furnace": "End Stone Blast Furnace"
+  "block.matpakhelper.end_stone_blast_furnace": "Endstone Blast Furnace",
+    
+    
+    
+    
+  "biome.terrablender.deferred_placeholder": "Placeholder Biome",
+
+  "biome.riverredux.gravelly_river": "Gravelly River",
+  "biome.riverredux.carved_river": "Carved River",
+  "biome.riverredux.sandy_river": "Sandy River",
+  "biome.riverredux.tropical_river": "Tropical River",
+
+  "biome.jermsy.birch_river": "Birch River",
+  "biome.jermsy.cold_river": "Cold River",
+  "biome.jermsy.dark_river": "Dark River",
+  "biome.jermsy.forest_river": "Forest River",
+  "biome.jermsy.humid_river": "Humid River",
+  "biome.jermsy.seasonal_river": "Seasonal River",
+  "biome.jermsy.torrid_river": "Torrid River",
+
+  "biome.jermsy.gravelly_beach": "Gravelly Beach",
+  "biome.jermsy.flower_fields": "Flower Fields",
+  "biome.jermsy.desert_hills": "Desert Hills",
+  "biome.jermsy.red_desert": "Red Desert",
+  "biome.jermsy.seasonal_forest": "Seasonal Forest",
+  "biome.jermsy.sparse_forest": "Sparse Forest",
+  "biome.jermsy.shrubland": "Shrubland",
+  "biome.jermsy.tundra": "Tundra",
+  "biome.jermsy.rainforest": "Oak Rainforest"
 }

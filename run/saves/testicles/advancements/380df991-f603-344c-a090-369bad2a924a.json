@@ -1,13 +1,13 @@
 {
   "minecraft:story/smelt_iron": {
     "criteria": {
-      "iron": "2023-07-03 22:40:07 +0200"
+      "iron": "2023-07-03 16:40:07 -0400"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:plains": "2023-07-03 20:02:14 +0200"
+      "minecraft:plains": "2023-07-03 14:02:14 -0400"
     },
     "done": false
   },
