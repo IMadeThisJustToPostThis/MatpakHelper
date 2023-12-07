@@ -3,6 +3,7 @@ package com.rennworks.matpackhelper.registry;
 import com.rennworks.matpackhelper.MatpakHelper;
 import com.rennworks.matpackhelper.block.entity.MPHDeepslateBlastFurnaceBlockEntity;
 import com.rennworks.matpackhelper.block.entity.MPHEndstoneBlastFurnaceBlockEntity;
+import com.rennworks.matpackhelper.block.entity.MPHTestFurnaceBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,6 +25,12 @@ public class MPHBlockEntityTypes {
             TILES.register("endstone_blast_furnace",
                     () -> BlockEntityType.Builder.of(MPHEndstoneBlastFurnaceBlockEntity::new,
                             MPHBlocks.ENDSTONE_BLAST_FURNACE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<MPHTestFurnaceBlockEntity>> TEST_FURNACE =
+            TILES.register("test_furnace",
+                    () -> BlockEntityType.Builder.of(MPHTestFurnaceBlockEntity::new,
+                            MPHBlocks.TEST_FURNACE.get()).build(null));
+
 
     public static void register(IEventBus eventBus) {
         TILES.register(eventBus);

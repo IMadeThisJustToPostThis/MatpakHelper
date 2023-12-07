@@ -1,4 +1,10 @@
 {
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2023-12-06 20:22:42 -0500"
+    },
+    "done": true
+  },
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2023-07-03 16:40:07 -0400"

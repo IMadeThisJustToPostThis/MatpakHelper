@@ -37,30 +37,30 @@ public class MPHDeepslateBlastFurnaceBlock extends AbstractFurnaceBlock {
     }
 
     protected void openContainer(Level level, BlockPos pos, Player player) {
-        BlockEntity $$3 = level.getBlockEntity(pos);
-        if ($$3 instanceof MPHDeepslateBlastFurnaceBlockEntity) {
-            player.openMenu((MenuProvider)$$3);
+        BlockEntity blockEntity = level.getBlockEntity(pos);
+        if (blockEntity instanceof MPHDeepslateBlastFurnaceBlockEntity) {
+            player.openMenu((MenuProvider)blockEntity);
             player.awardStat(Stats.INTERACT_WITH_BLAST_FURNACE);
         }
     }
 
     public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
         if ((Boolean)state.getValue(LIT)) {
-            double $$4 = (double)pos.getX() + 0.5;
-            double $$5 = (double)pos.getY();
-            double $$6 = (double)pos.getZ() + 0.5;
+            double d0 = (double)pos.getX() + 0.5;
+            double d1 = (double)pos.getY();
+            double d2 = (double)pos.getZ() + 0.5;
             if (random.nextDouble() < 0.1) {
-                level.playLocalSound($$4, $$5, $$6, SoundEvents.BLASTFURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
+                level.playLocalSound(d0, d1, d2, SoundEvents.BLASTFURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
             }
 
             Direction $$7 = (Direction)state.getValue(FACING);
             Direction.Axis $$8 = $$7.getAxis();
-            double $$9 = 0.52;
-            double $$10 = random.nextDouble() * 0.6 - 0.3;
-            double $$11 = $$8 == Axis.X ? (double)$$7.getStepX() * $$9 : $$10;
-            double $$12 = random.nextDouble() * 9.0 / 16.0;
-            double $$13 = $$8 == Axis.Z ? (double)$$7.getStepZ() * $$9 : $$10;
-            level.addParticle(ParticleTypes.SMOKE, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
+            double d3 = 0.52;
+            double d4 = random.nextDouble() * 0.6 - 0.3;
+            double d5 = $$8 == Axis.X ? (double)$$7.getStepX() * d3 : d4;
+            double d6 = random.nextDouble() * 9.0 / 16.0;
+            double d7 = $$8 == Axis.Z ? (double)$$7.getStepZ() * d3 : d4;
+            level.addParticle(ParticleTypes.SMOKE, d0 + d5, d1 + d6, d2 + d7, 0.0, 0.0, 0.0);
         }
     }
 }

@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.rennworks.matpackhelper.registry.MPHBlockEntityTypes;
 import com.rennworks.matpackhelper.registry.MPHBlocks;
 import com.rennworks.matpackhelper.registry.MPHItems;
+import com.rennworks.matpackhelper.registry.MPHParticleTypes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,6 +27,7 @@ public class MatpakHelper {
         MPHItems.register(mphEventBus);
         MPHBlocks.register(mphEventBus);
         MPHBlockEntityTypes.register(mphEventBus);
+        MPHParticleTypes.register(mphEventBus);
 
         mphEventBus.addListener(this::commonSetup);
 

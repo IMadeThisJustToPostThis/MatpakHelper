@@ -3,6 +3,7 @@ package com.rennworks.matpackhelper.registry;
 import com.rennworks.matpackhelper.MatpakHelper;
 import com.rennworks.matpackhelper.block.MPHDeepslateBlastFurnaceBlock;
 import com.rennworks.matpackhelper.block.MPHEndstoneBlastFurnaceBlock;
+import com.rennworks.matpackhelper.block.MPHTestFurnaceBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -114,6 +115,10 @@ public class MPHBlocks {
             CreativeModeTab.TAB_DECORATIONS);
     public static final RegistryObject<Block> ENDSTONE_BLAST_FURNACE = registerBlock("end_stone_blast_furnace",
             () -> new MPHEndstoneBlastFurnaceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F,9.0F).lightLevel(litBlockEmission(13))),
+            CreativeModeTab.TAB_DECORATIONS);
+    public static final RegistryObject<Block> TEST_FURNACE = registerBlock("test_furnace",
+            () -> new MPHTestFurnaceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
                     .strength(3.0F,9.0F).lightLevel(litBlockEmission(13))),
             CreativeModeTab.TAB_DECORATIONS);
 
